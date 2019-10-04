@@ -8,7 +8,8 @@ env:
 
   matrix:
     - VERSION=6.0 TAGS=6.0
-    - VERSION=6.2 TAGS=6.2,latest
+    - VERSION=6.2 TAGS=6.2
+    - VERSION=6.3 TAGS=6.3,latest
 
 install:
   # Install Docksal to have a matching versions of Docker on the build host

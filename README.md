@@ -7,9 +7,9 @@ This image(s) is part of the [Docksal](http://docksal.io) image library.
 
 ## Versions
 
-- `docksal/varnish:4.1` (`docksal/varnish:4.1-2.0`)
-- `docksal/varnish:6.0` (`docksal/varnish:6.0-2.0`)
-- `docksal/varnish:6.1` (`docksal/varnish:6.1-2.0`, `docksal/varnish:latest`)
+- `docksal/varnish:6.0` (`docksal/varnish:6.0-3.0`)
+- `docksal/varnish:6.2` (`docksal/varnish:6.2-3.0`)
+- `docksal/varnish:6.3` (`docksal/varnish:6.3-3.0`, `docksal/varnish:latest`)
 
 Image tag scheme: `<software-version>[-<image-stability-tag>][-<flavor>]`
 
@@ -19,6 +19,7 @@ Image tag scheme: `<software-version>[-<image-stability-tag>][-<flavor>]`
 - Cache flushing using `PURGE` (individual pages) and `BAN` (cache tag based) requests
 - VCL config settings via environment variables, as well as custom VCL config support
 - BigPipe support 
+- Caching HTTP and HTTPS independently
 
 
 ## Environmental variables

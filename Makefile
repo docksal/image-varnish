@@ -1,12 +1,10 @@
 DOCKER ?= docker
 
-VERSION ?= 6.2
+VERSION ?= 6.0
 TAG ?= $(VERSION)
 
 REPO ?= docksal/varnish
 NAME = docksal-varnish-$(VERSION)
-
-BASE_IMAGE_TAG = $(VERSION)
 
 ifneq ($(STABILITY_TAG),)
 	ifneq ($(TAG),latest)
