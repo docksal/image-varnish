@@ -5,10 +5,11 @@ language: minimal
 env:
   global:
     - REPO=docksal/varnish
+    - LATEST_VERSION=6.2
 
   matrix:
-    - VERSION=6.0 TAGS=6.0
-    - VERSION=6.2 TAGS=6.2,latest
+    - VERSION=6.0
+    - VERSION=6.2
 
 install:
   # Install Docksal to have a matching versions of Docker on the build host
@@ -22,7 +23,7 @@ script:
   - make test
 
 after_success:
-  - ${TRAVIS_BUILD_DIR}/release.sh
+  - make release
 
 after_failure:
   - make logs
